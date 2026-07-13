@@ -83,7 +83,7 @@ dotnet build MPF.CLI/MPF.CLI.csproj --framework net10.0 --runtime [win-x86|win-x
 dotnet build MPF.Check/MPF.Check.csproj --framework net10.0 --runtime [win-x86|win-x64|win-arm64|linux-x64|linux-arm64|osx-x64|osx-arm64]
 ```
 
-Choose one of `win-x86`, `win-x64`, `win-arm64`, `linux-x64`, `linux-arm64`, `osx-x64`, or `osx-arm64` depending on the machine you are targeting.
+Choose one of `win-x86`, `win-x64`, `win-arm64`, `linux-x64`, `linux-arm64`, `linux-musl-x64`, `osx-x64`, or `osx-arm64` depending on the machine you are targeting.
 
 ### Build Scripts
 
