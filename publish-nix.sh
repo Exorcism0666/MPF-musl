@@ -57,12 +57,13 @@ echo "  No archive (-a)                       $NO_ARCHIVE"
 echo " "
 
 # Create the build matrix arrays
+# Create the build matrix arrays
 AVALONIA_FRAMEWORKS=("net10.0")
-AVALONIA_RUNTIMES=("win-x86" "win-x64" "win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64")
+AVALONIA_RUNTIMES=("win-x86" "win-x64" "win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64" "linux-musl-x64")
 UI_FRAMEWORKS=("net10.0-windows")
 UI_RUNTIMES=("win-x86" "win-x64")
 CHECK_FRAMEWORKS=("net10.0")
-CHECK_RUNTIMES=("win-x86" "win-x64" "win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64")
+CHECK_RUNTIMES=("win-x86" "win-x64" "win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64" "linux-musl-x64")
 
 # Use expanded framework lists, if requested
 if [ $USE_ALL = true ]; then
@@ -75,7 +76,7 @@ fi
 SINGLE_FILE_CAPABLE=("net5.0" "net5.0-windows" "net6.0" "net6.0-windows" "net7.0" "net7.0-windows" "net8.0" "net8.0-windows" "net9.0" "net9.0-windows" "net10.0" "net10.0-windows")
 VALID_APPLE_FRAMEWORKS=("net6.0" "net7.0" "net8.0" "net9.0" "net10.0")
 VALID_CROSS_PLATFORM_FRAMEWORKS=("netcoreapp3.1" "net5.0" "net6.0" "net7.0" "net8.0" "net9.0" "net10.0")
-VALID_CROSS_PLATFORM_RUNTIMES=("win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64")
+VALID_CROSS_PLATFORM_RUNTIMES=("win-arm64" "linux-x64" "linux-arm64" "osx-x64" "osx-arm64" "linux-musl-x64")
 
 # Download programs step
 function download_programs() {
