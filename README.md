@@ -1,4 +1,4 @@
-# Media Preservation Frontend (MPF)
+# Media Preservation Frontend (MPF) (with musl)
 
 Redumper/Aaru/DiscImageCreator UI in C#
 
